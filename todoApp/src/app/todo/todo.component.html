@@ -1,0 +1,39 @@
+<div class="bdy">
+
+
+  <div class="container">
+    <h1 class="display-4">Angular-Todo App-ByMDNayaz</h1>
+    <p class="lead">This Project is Done under the course Full Stack JS developer E-Degree</p>
+  </div>
+
+<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-8 align-self-center">
+      <input type="text" name="todoText" class="txtbox" [(ngModel)]="todoText" (keyup.enter)="onAddTodoText()" />
+    </div><br>
+    <div class="col-2">
+      <button class="btnAdd" (click)="onAddTodoText()">Add</button>
+      &nbsp;&nbsp;&nbsp;
+      <button class="btnClear" (click)="onClearTodoText()">Clear</button>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <div class="row">
+    <div class="col">
+      <div *ngIf="isTodoListEmpty">
+        <p>List is empty!</p>
+      </div>
+      <div class="list-group" *ngIf="!isTodoListEmpty">
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let todo of todoList">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="todolist" [ngClass]="todo.isCompleted ? 'strike':''">{{todo.text}}</h5>
+            <button class="btnDone" (click)="onCompletingTask(todo.todoId)">{{todo.buttonText}}</button>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+*{
+  font-family: fantasy;
+}
+.bdy{
+  background-color: lightgreen;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.container{
+  background: lightcoral;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 20em;
+  margin-right: 20em;
+  padding: 2em;
+}
+.txtbox{
+  width: 100%;
+  font-size: 1.5em;
+}
+.btnAdd{
+  width: 150px;
+  padding: 0.5em;
+  background-color: dodgerblue;
+  border-width: 0.5em;
+  border-color: lightgreen;
+  font-size: 1em;
+  font-family:cursive;
+}
+.btnClear{
+  width: 150px;
+  padding: 0.5em;
+  background-color: mediumslateblue;
+  border-width: 0.5em;
+  border-color: lightgreen;
+  font-size: 1em;
+  font-family:cursive;
+}
+.btnDone{
+
+    width: 150px;
+    padding: 0.5em;
+    background-color: gold;
+    border-width: 0.5em;
+    border-color: dodgerblue;
+    font-size: 1em;
+    font-family:cursive;
+}
+.todolist{
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-family:cursive;
+}
+.strike {
+  text-decoration: line-through;
+  color: black;
+
+}
